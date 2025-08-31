@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "Unlicense"
+
+[[mods]]
+modId = "donvi"
+version = "${version}"
+displayName = "Dump Of Non-Vanilla Ideas"
+authors = "timtaran"
+description = '''
+A mod that combines everything at once, which shouldn't be in vanilla mods and which should be separated into separate projects
+'''
+#logoFile = ""
+
+[[dependencies.donvi]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.donvi]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.donvi]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "donvi.mixins.json"

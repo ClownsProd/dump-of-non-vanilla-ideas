@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "donvi",
+  "version": "${version}",
+  "name": "Dump Of Non-Vanilla Ideas",
+  "description": "A mod that combines everything at once, which shouldn't be in vanilla mods and which should be separated into separate projects",
+  "authors": [
+    "timtaran"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ClownsProd/donvi"
+  },
+  "license": "unlicense",
+  "icon": "assets/donvi/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "su.clwn.dumpofnonvanillaideas.fabric.DumpOfNonVanillaIdeasFabric"
+    ],
+    "client": [
+      "su.clwn.dumpofnonvanillaideas.fabric.client.DumpOfNonVanillaIdeasFabricClient"
+    ]
+  },
+  "mixins": [
+    "donvi.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
