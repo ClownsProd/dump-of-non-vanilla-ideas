@@ -21,7 +21,7 @@ public class DonviEntityTypes {
     System.out.println(ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.fromNamespaceAndPath(DumpOfNonVanillaIdeas.MOD_ID, "serega")));
 
     SEREGA = registerEntityType("serega", () -> EntityType.Builder.of(BasicNextBot::new, MobCategory.MONSTER)
-            .sized(2f, 2f)
+            .sized(2f, 2.4f)
             .clientTrackingRange(10)
             .build(ResourceKey.create(Registries.ENTITY_TYPE, ResourceLocation.fromNamespaceAndPath(DumpOfNonVanillaIdeas.MOD_ID, "serega")).toString()));
 

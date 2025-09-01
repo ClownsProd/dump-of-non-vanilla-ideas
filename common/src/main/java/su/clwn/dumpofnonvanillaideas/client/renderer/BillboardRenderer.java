@@ -25,7 +25,6 @@ public class BillboardRenderer<T extends Entity> extends EntityRenderer<T> {
   @Override
   public void render(T entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
     poseStack.pushPose();
-
     poseStack.translate(0.0, entity.getBbHeight() / 2.0, 0.0);
 
     // face camera
