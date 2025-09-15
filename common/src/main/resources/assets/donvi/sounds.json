@@ -1,0 +1,16 @@
+{
+  "mob.serega.random": {
+    "sounds": [
+      "donvi:serega1",
+      "donvi:serega2",
+      "donvi:serega3",
+      "donvi:serega4",
+      "donvi:serega5",
+      "donvi:serega6",
+      "donvi:serega7",
+      "donvi:serega8",
+      "donvi:serega9",
+      "donvi:serega10"
+    ]
+  }
+}

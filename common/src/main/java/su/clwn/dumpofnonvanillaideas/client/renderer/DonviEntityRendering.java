@@ -10,16 +10,17 @@ import net.minecraft.world.entity.EntityType;
 import su.clwn.dumpofnonvanillaideas.DumpOfNonVanillaIdeas;
 import su.clwn.dumpofnonvanillaideas.client.model.SeregaModel;
 import su.clwn.dumpofnonvanillaideas.entity.BasicNextBot;
-import su.clwn.dumpofnonvanillaideas.entity.DonviEntityTypes;
+import su.clwn.dumpofnonvanillaideas.registry.EntityTypeRegistry;
+import su.clwn.dumpofnonvanillaideas.util.DonviIdentifier;
 
 import java.util.function.Supplier;
 
 public class DonviEntityRendering {
   public static void initEntityRendering() {
     registerModelLayer(SeregaModel.LAYER_LOCATION, SeregaModel::createBodyLayer);
-    registerEntityRenderer(DonviEntityTypes.SEREGA, context -> {
+    registerEntityRenderer(EntityTypeRegistry.SEREGA, context -> {
       SeregaModel<BasicNextBot> model = new SeregaModel<>(context.bakeLayer(SeregaModel.LAYER_LOCATION));
-      ResourceLocation texture = ResourceLocation.fromNamespaceAndPath(DumpOfNonVanillaIdeas.MOD_ID, "textures/entity/serega.png");
+      ResourceLocation texture = DonviIdentifier.get("textures/entity/serega.png");
       return new BillboardRenderer<>(context, model, texture);
     });
   }

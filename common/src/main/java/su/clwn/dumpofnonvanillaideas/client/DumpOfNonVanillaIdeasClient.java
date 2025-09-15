@@ -7,7 +7,7 @@ import su.clwn.dumpofnonvanillaideas.client.renderer.DonviEntityRendering;
 public class DumpOfNonVanillaIdeasClient {
   public static void init() {
     ClientLifecycleEvent.CLIENT_STARTED.register(listener -> {
-      if(Platform.isFabric()) {
+      if (Platform.isFabric()) {
         DonviEntityRendering.initEntityRendering();
       }
     });

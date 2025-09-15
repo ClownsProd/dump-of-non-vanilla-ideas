@@ -15,10 +15,11 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import su.clwn.dumpofnonvanillaideas.DumpOfNonVanillaIdeas;
+import su.clwn.dumpofnonvanillaideas.util.DonviIdentifier;
 
 public class SeregaModel<T extends Entity> extends EntityModel<T> {
   // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-  public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(DumpOfNonVanillaIdeas.MOD_ID, "serega"), "main");
+  public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(DonviIdentifier.get("serega"), "main");
   private final ModelPart bb_main;
 
   public SeregaModel(ModelPart root) {
