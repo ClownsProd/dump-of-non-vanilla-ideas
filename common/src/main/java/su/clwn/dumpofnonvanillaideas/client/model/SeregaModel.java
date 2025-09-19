@@ -12,9 +12,7 @@ import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
-import su.clwn.dumpofnonvanillaideas.DumpOfNonVanillaIdeas;
 import su.clwn.dumpofnonvanillaideas.util.DonviIdentifier;
 
 public class SeregaModel<T extends Entity> extends EntityModel<T> {

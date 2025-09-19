@@ -3,7 +3,6 @@ package su.clwn.dumpofnonvanillaideas.registry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import su.clwn.dumpofnonvanillaideas.DumpOfNonVanillaIdeas;
 import su.clwn.dumpofnonvanillaideas.util.DonviIdentifier;

@@ -12,10 +12,10 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
-public abstract class BasicNextBot extends Monster {
+public class BasicNextBot extends Monster {
   protected int soundChance = 200;
   protected float soundVolume = 1f;
-  protected BasicNextBot(EntityType<? extends Monster> entityType, Level level) {
+  public BasicNextBot(EntityType<? extends Monster> entityType, Level level) {
     super(entityType, level);
   }
 
@@ -36,16 +36,23 @@ public abstract class BasicNextBot extends Monster {
             .add(Attributes.FOLLOW_RANGE, 96.0D);
   }
 
-  protected abstract SoundEvent getEntitySound();
+  protected SoundEvent getEntitySound() {
+    return null;
+  }
 
   private void playEntitySound() {
     if (this.random.nextInt(soundChance) == 0) {
       if (!this.level().isClientSide) {
+        SoundEvent sound = getEntitySound();
+        if (sound == null) {
+          return;
+        }
+
         float pitch = 0.8F + this.random.nextFloat() * 0.4F;
         this.level().playSound(
                 null,
                 this.blockPosition(),
-                getEntitySound(),
+                sound,
                 SoundSource.HOSTILE,
                 soundVolume,
                 pitch
