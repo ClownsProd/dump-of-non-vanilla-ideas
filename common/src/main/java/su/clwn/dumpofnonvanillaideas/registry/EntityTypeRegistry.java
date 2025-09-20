@@ -23,7 +23,7 @@ public class EntityTypeRegistry {
 
     SEREGA = registerEntityType("serega", () -> EntityType.Builder.of(SeregaEntity::new, MobCategory.MONSTER)
             .sized(1.5f, 1.8f)
-            .clientTrackingRange(10)
+            .clientTrackingRange(32)
             .build(ResourceKey.create(Registries.ENTITY_TYPE, DonviIdentifier.get("serega")).toString()));
 
     ENTITIES.register();

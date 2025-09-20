@@ -1,4 +1,4 @@
-package su.clwn.dumpofnonvanillaideas.client.renderer.neoforge;
+package su.clwn.dumpofnonvanillaideas.registry.neoforge;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;

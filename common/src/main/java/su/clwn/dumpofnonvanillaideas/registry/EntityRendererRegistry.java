@@ -1,4 +1,4 @@
-package su.clwn.dumpofnonvanillaideas.client.renderer;
+package su.clwn.dumpofnonvanillaideas.registry;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import net.minecraft.client.model.geom.ModelLayerLocation;
@@ -8,13 +8,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import su.clwn.dumpofnonvanillaideas.client.model.SeregaModel;
+import su.clwn.dumpofnonvanillaideas.client.renderer.BillboardRenderer;
 import su.clwn.dumpofnonvanillaideas.entity.SeregaEntity;
-import su.clwn.dumpofnonvanillaideas.registry.EntityTypeRegistry;
 import su.clwn.dumpofnonvanillaideas.util.DonviIdentifier;
 
 import java.util.function.Supplier;
 
-public class DonviEntityRendering {
+public class EntityRendererRegistry {
   public static void initEntityRendering() {
     registerModelLayer(SeregaModel.LAYER_LOCATION, SeregaModel::createBodyLayer);
     registerEntityRenderer(EntityTypeRegistry.SEREGA, context -> {
