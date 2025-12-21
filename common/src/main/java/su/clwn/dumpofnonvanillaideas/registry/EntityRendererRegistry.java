@@ -7,8 +7,8 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
-import su.clwn.dumpofnonvanillaideas.client.model.SeregaModel;
-import su.clwn.dumpofnonvanillaideas.client.renderer.BillboardRenderer;
+import su.clwn.dumpofnonvanillaideas.entity.model.SeregaModel;
+import su.clwn.dumpofnonvanillaideas.entity.renderer.BillboardRenderer;
 import su.clwn.dumpofnonvanillaideas.entity.SeregaEntity;
 import su.clwn.dumpofnonvanillaideas.util.DonviIdentifier;
 
